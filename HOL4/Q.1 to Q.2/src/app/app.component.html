@@ -1,0 +1,22 @@
+<h1>Understanding Pipes</h1>
+
+<h2>Date</h2>
+<p>Current Date : {{ dateToday | date }}</p>
+<p>Current Date: {{ dateToday | date: "dd/MM/yyyy" }}</p>
+
+<h2>Currency</h2>
+<p>The amount is : {{ amount }}</p>
+<p>The amount is : {{ amount | currency: "INR" }}</p>
+<p>The amount is : {{ amount | currency: "EUR" }}</p>
+
+<h2>Lowercase & Uppercase</h2>
+<p>Normal : {{ text }}</p>
+<p>Lowercase : {{ text | lowercase }}</p>
+<p>Uppercase : {{ text | uppercase }}</p>
+<p>titlecase :{{ text | titlecase }}</p>
+
+<h2>Slice</h2>
+<p>Normal amount : {{ amount }}</p>
+<p>Sliced amount : {{ amount | slice: 1:5 }}</p>
+<p>Sliced amount : {{ amount | slice: 0:5 }}</p>
+<p>Sliced amount : {{ amount | slice: 0 }}</p>
